@@ -20,5 +20,10 @@ JellyShim acts as a shim between the Projectivy launcher and the Moonfin client.
 - Channels are capped at 200 items. This cap was chosen as it mirrors the upper display limit that Projectivy allows. Projectivy has a slider that caps out at 200, so even if a channel had more than 200 items only 200 could be displayed by Projectivy.
 - Currently only works with Moonfin.
 
+## Using a different client
+All client-specific logic lives in ClientProfile.kt. If you would like to use a different client other than Moonfin feel free to fork and modify that file to achieve the desired result. ClientProfiles.ACTIVE at the bottom of the file sets the client. There are builtin profiles for MOONFIN and JELLYFIN_OFFICIAL (although the latter has received minimal testing. 
+
+To use another client, you would need to copy a profile, change the package name and the two intents (open/play), and point ACTIVE at it.
+
 ## Disclosure
 Claude was heavily used to assist the development of the subject code.
