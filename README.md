@@ -1,5 +1,5 @@
 # JellyShim
-An small AndroidTV app that acts as a shim between Moonfin-Core (Jellyfin Client) and the Projectivy Launcher. An APK is available on the releases page.
+A small AndroidTV app that acts as a shim between Moonfin-Core (Jellyfin Client) and the Projectivy Launcher. An APK is available on the releases page.
 
 ## Purpose
 I wasn't satisfied with the "channel" integrations offered by any of the well-maintained Jellyfin clients. For years I used a modified version of Kodi as my launcher and was able to browse and open all my Jellyfin movies and shows from the same screen that I launched my other apps. 
@@ -13,7 +13,7 @@ JellyShim acts as a shim between the Projectivy launcher and the Moonfin client.
 - Creates a "Continue Watching" channel that contains items from Jellyfin's "Continue Watching" and "Next Up" sections.
 - Syncs regular channels every six hours.
 - Syncs the "Continue Watching" channel every 45 seconds.
-- Has a Activity/Intent that when manually triggered will sync the "Continue Watching" channel and then go home to the launcher screen. This is useful if you are using something like TVQuickActions to manually trigger certain actions on button presses. Personally I have remapped my home button to run a macro that triggers the activity and then runs an ADB command to reload the launcher which helps ensure that the channel is up to date whenever I go back to the home screen (unless reloaded Projectivy only updates channel content on an interval).
+- Has an Activity/Intent that when manually triggered will sync the "Continue Watching" channel and then go home to the launcher screen. This is useful if you are using something like TVQuickActions to manually trigger certain actions on button presses. Personally I have remapped my home button to run a macro that triggers the activity and then runs an ADB command to reload the launcher which helps ensure that the channel is up to date whenever I go back to the home screen (unless reloaded Projectivy only updates channel content on an interval).
 - Movie library channels group any movies that are part of a collection into a single item for the entire collection. This reduces clutter and helps mitigate the item cap mentioned below.
 
 ## Limitations
@@ -29,4 +29,4 @@ To use another client, you would need to copy a profile, change the package name
 Claude was heavily used to assist the development of the subject code. Gemini was also used as a secondary code auditing tool.
 
 ## Disclaimer
-This is a personal project to suit my personal needs. There is no guarantee that it will work for every setup. This project is not affiliated with Jellyfin or Moonfin.
+This is a personal project to suit my personal needs. There is no guarantee that it will work for every setup. This project is not affiliated with Projectivy, Jellyfin or Moonfin.
