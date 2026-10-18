@@ -6,7 +6,7 @@ I wasn't satisfied with the "channel" integrations offered by any of the well-ma
 
 Due to some issues with Kodi I decided to switch to Projectivy as my launcher and use one of the native Jellyfin clients for playback, but that raised the issue that I needed to open that client and navigate to the specific library before I could browse Jellyfin clients. The various clients available offer limited interaction with the Android TV launcher "channels" functionality, usually limited to "next up" or "recently added" channels.
 
-JellyShim acts as a shim between the Projectivy launcher and the Moonfin client. Basically, it has a simple interface that allows you to login to your Jellyfin server, and sync your libraries to library "channels" (as well as a "Continue Watching" channel. These channels can be displayed on the Projectivy launcher home screen, and clicking on an item will use Moonfin deeplinks to launch that content using the Moonfin client.
+JellyShim acts as a shim between the Projectivy launcher and the Moonfin client. Basically, it has a simple interface that allows you to login directly to your Jellyfin server (designed around the Jellyfin 12+ API), and sync your libraries to library "channels" (as well as a "Continue Watching" channel. These channels can be displayed on the Projectivy launcher home screen, and clicking on an item will use Moonfin deeplinks to launch that content using the Moonfin client.
 
 ## Features
 - Creates Android TV "channels" for each Jellyfin library you have (excluding collections, playlists, and live TV).
