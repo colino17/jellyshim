@@ -1,5 +1,5 @@
 # JellyShim
-An small AndroidTV app that acts as a shim between Moonfin (Jellyfin Client) and the Projectivy Launcher.
+An small AndroidTV app that acts as a shim between Moonfin-Core (Jellyfin Client) and the Projectivy Launcher.
 
 ## Purpose
 I wasn't satisfied with the "channel" integrations offered by any of the well-maintained Jellyfin clients. For years I used a modified version of Kodi as my launcher and was able to browse and open all my Jellyfin movies and shows from the same screen that I launched my other apps. 
@@ -26,4 +26,7 @@ All client-specific logic lives in ClientProfile.kt. If you would like to use a 
 To use another client, you would need to copy a profile, change the package name and the two intents (open/play), and point ACTIVE at it.
 
 ## Disclosure
-Claude was heavily used to assist the development of the subject code.
+Claude was heavily used to assist the development of the subject code. Gemini was also used as a secondary code auditing tool.
+
+## Disclaimer
+This is a personal project to suit my personal needs. There is no guarantee that it will work for every setup. This project is not affiliated with Jellyfin or Moonfin.
