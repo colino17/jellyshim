@@ -21,7 +21,7 @@ JellyShim acts as a shim between the Projectivy launcher and the Moonfin client.
 - Currently only works with Moonfin.
 
 ## Using a different client
-All client-specific logic lives in ClientProfile.kt. If you would like to use a different client other than Moonfin feel free to fork and modify that file to achieve the desired result. ClientProfiles.ACTIVE at the bottom of the file sets the client. There are builtin profiles for MOONFIN and JELLYFIN_OFFICIAL (although the latter has received minimal testing. 
+All client-specific logic lives in ClientProfile.kt. If you would like to use a different client other than Moonfin feel free to fork and modify that file to achieve the desired result. ClientProfiles.ACTIVE at the bottom of the file sets the client. There are builtin profiles for MOONFIN and JELLYFIN_OFFICIAL (although the latter has received minimal testing). 
 
 To use another client, you would need to copy a profile, change the package name and the two intents (open/play), and point ACTIVE at it.
 
